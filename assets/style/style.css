@@ -17,7 +17,7 @@ nav {
     align-items: center;
 }
 
-.nav-title {
+.secton-title {
     font-size: 2rem;
     font-weight: 700;
     color: #131313;
@@ -124,6 +124,71 @@ main {
 
 }
 
+/* Fact section */
+.fact {
+    margin: 50px 240px;
+}
+
+.card-fact-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card-fact-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    /* font-size: 2.8rem; */
+    padding: 30px;
+    width: 100px;
+
+}
+
+.card-fact-container .card-stat {
+    font-weight: 600;
+    color: #424242;
+}
+
+.card img {
+    width: 45px;
+    height: 45px;
+}
+
+.card-details {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.taitle-details {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+/* Sponspors section start */
+.sponspors {
+    margin: 180px 240px 50px 240px;
+    align-items: center;
+}
+
+#secton-title {
+    text-align: center;
+}
+
+.sponspors-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.sponspors-img-container img {
+    width: 100px;
+}
 
 /* Responsive media query style  */
 
@@ -134,7 +199,9 @@ main {
     }
 
     nav,
-    .tems-container {
+    .tems-container,
+    .card-fact-container,
+    .sponspors-img-container {
         flex-direction: column;
     }
 
@@ -143,19 +210,34 @@ main {
 
     }
 
-    .tems-container {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-
-/* Medium Device */
-@media screen and (min-width:576px) and (max-width:960px) {
-    nav {
-        flex-direction: column;
+    .tems-container,
+    .card-fact-container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    header {
-        padding: 50px;
+    .card-fact-container {
+        gap: 20px;
+        width: 100%;
     }
-}
+
+
+
+    /* Medium Device */
+    @media screen and (min-width:576px) and (max-width:960px) {
+
+        nav,
+        .tems-container {
+            flex-direction: column;
+        }
+
+        header {
+            padding: 50px;
+        }
+
+        .card-fact-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+    }
