@@ -5,142 +5,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=S, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/style/style.css">
+    <!-- <link rel="stylesheet" href="assets/style/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 
 </head>
 
 <body>
     <!-- Header section start -->
     <header>
-        <nav>
-            <h3 class="secton-title">G3 Architects</h3>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Login</a></li>
-            </ul>
-        </nav>
-        <div class="banner">
-            <div class="banner-content">
-                <h1 class="banner-titel">Brand New <br> Group of Architects </h1>
-                <p class="banner-discription">There are many variations of passages of Lorem Ipsum available, but the
-                    majority have suffered alteration in
-                    some form, by injected humour, or randomised words which don't look even</p>
-                <button class="btn-prymary">Explore More</button>
+        <div class="navbar bg-base-100 px-5 md:px-12 lg:px-20">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#Contact">Contact Us</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">G3 Architects</a>
             </div>
-
-            <img src="assets/imges/banner.png" alt="" height="400px" width="800px">
-        </div>
-
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-base">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Log In</a>
+            </div>
+          </div>
+          <!-- Home section start -->
+          <div class="mx-5 md:mx-12 lg:mx-20" id="home">
+            
+                <div class="text-center">
+                    <h1 class=" text-3xl md:text-4xl lg:text-6xl fond-extrabold">Brand New <br> Group of Architects</h1>
+                    <p class="mt-5 md:mt-8 lg:mt-12 pb-5 md:pb-8 lg:pb-12">There are many variations of passages of Lorem Ipsum available,<br> but the majority have suffered alteration in some form, by <br>injected humour, or randomised words which don't look even</p>
+                    <button class="btn  bg-[#FF900E] text-white">Explore More</button>
+                </div>
+                <img src="assets/imges/banner.png" alt="" class="mt-5 md:mt-8 lg:mt-12">
+          </div>
     </header>
+    
     <main>
         <!-- Features section start -->
-        <section class="tems-container">
-            <div class="tems-img-container">
-                <img src="assets/imges/team1.png" alt="" width="250px">
-                <img src="assets/imges/team2.png" alt="" width="250px">
-                <img src="assets/imges/team3.png" alt="" width="250px">
-                <img src="assets/imges/team4.png" alt="" width="250px">
-            </div>
-            <div class="tems-contant">
-                <h3 class="tems-title"> Quick list<samp class="span2"> of Our </samp> <samp
-                        class="span3">Features</samp>
-                </h3>
-                <p class="tem-details">There are many variations of passages of Lorem Ipsum available, but the
-                    majority
-                    have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even</p>
-                <button class="btn-prymary">Explore More</button>
-            </div>
-        </section>
-        <!-- Feature section start -->
-        <section class="feature">
-            <div class="feature-content">
-                <h3 class="secton-title">Features you will<br>love & enjoy</h3>
-                <p class="taitle-details">There are many variations of passages of Lorem Ipsum available, but the
-                    majority have suffered alteration in some form, by injected humour, or randomised words which don't
-                    look even</p>
-                <div class="card">
-                    <h4>Dexktop & Mobile Version</h4>
-                    <p class="taitle-details">There are many variations of passages of Lorem Ipsum available, but the
-                        majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+        <Section class="mx-5 md:mx-12 lg:mx-20" id="about">
+            <h1 class="text-center text-3xl md:text-4xl lg:text-5xl py-12"> 
+                know our teammate </h1>
+            <div class="hero min-h-screen ">
+                <div class="hero-content flex-col lg:flex-row lg:gap-20 gap-12 ">
+                   <div class="grid grid-cols-2 gap-3">
+                        <div><img src="assets/imges/team1.png" alt=""></div>
+                        <div><img src="assets/imges/team2.png" alt=""></div>
+                        <div><img src="assets/imges/team3.png" alt=""></div>
+                        <div><img src="assets/imges/team4.png" alt=""></div>
+                   </div>
+                  <div>
+                    <h1 class="lg:text-5xl md:text-4xl text-3xl font-bold"><span class="text-[#727272] ">Quick list</span> of Our <span></span><br><span class="text-[#FF900E]">Features</span></h1>
+                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn bg-[#FF900E] text-white">Get Started</button>
+                  </div>
                 </div>
-                <div class="card">
-                    <h3>Drag & Drop Builder</h3>
-                    <p class="taitle-details">There are many variations of passages of Lorem Ipsum available, but the
-                        majority have suffered
-                        alteration in some form, by injected humour, or randomised...........</p>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <div class="pb-4">
+                        <div class="border-l-8 border-[#FF900E]"><h1 class="pl-5 text-2xl md:text-3xl lg:text-4xl font-semibold ">Features you will <br> love & enjoy</h1>
+                        </div>
+                        <p class="text-[#727272] mt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                        <div class="border shadow-md mb-2 px-4 py-5 rounded-md my-3">
+                            <h1 class="text-xl font-bold">Dexktop & Mobile Version</h1>
+                            <p class="text-[#727272]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                        </div>
+                        <div class="border shadow-md mb-2 px-4 py-5 rounded-md my-3">
+                            <h1 class="text-xl font-bold">Drag & Drop Builder</h1>
+                            <p class="text-[#727272]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                        </div>
+                        <div class="border shadow-md mb-2 px-4 py-5 rounded-md my-3">
+                            <h1 class="text-xl font-bold">Awesome Modern Design</h1>
+                            <p class="text-[#727272]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                        </div>
+                        <div class="border shadow-md mb-2 px-4 py-5 rounded-md my-3">
+                            <h1 class="text-xl font-bold">Super Easy to Edit</h1>
+                            <p class="text-[#727272]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                        </div>
+                        
+                        
+                    </div>
+                    <div>
+                        <img src="assets/imges/architect.png" alt="" class="h-min z-0 relative">
+                        <div class="text-center px-5 py-4 bg-[#FF900E] w-48 ml-[-50px]  z-20 mt-[-50px] absolute">
+                            <h1 class="lg:text-3xl text-2xl font-bold text-white">10 + years</h1>
+                            <p class="text-white">Experience</p>
+                        </div>
+                    </div>
+              </div>
+        </Section>
+        
+        <!-- Sponcer section start -->
+        <section class="mx-5 md:mx-12 lg:mx-20">
+            <div>
+                <div class="text-center">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl py-14 font-semibold">Our Sponspors</h1>
+                <p class="text-[#727272] pb-7">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
                 </div>
-                <div class="card">
-                    <h3>Awesome Modern Design</h3>
-                    <p class="taitle-details">There are many variations of passages of Lorem Ipsum available, but the
-                        majority have suffered
-                        alteration in some form, by injected humour, or randomised...........</p>
-                </div>
-                <div class="card">
-                    <h3>Super Easy to Edit</h3>
-                    <p class="taitle-details">There are many variations of passages of Lorem Ipsum available, but the
-                        majority have suffered
-                        alteration in some form, by injected humour, or randomised...........</p>
-                </div>
-            </div>
-            <div class="feature-img">
-                <img src="assets/imges/architect.png" alt="">
-                <div class="ten-years-badge">
-                    <h2>10 + years</h2>
-                    <p>Experience</p>
-                </div>
-            </div>
-        </section>
-        <!-- Fact section start -->
-        <section class="fact">
-            <h3 class="secton-title">Some Facts</h3>
-            <p class="taitle-details">There are many variations of passages of Lorem Ipsum available, <br> but the
-                majority
-                have suffered
-                alteration.</p>
-            <div class="card-fact-container">
-                <div class="card">
-                    <img src="assets/icons/ribon.png" alt="">
-                    <h3 class="card-stat">54</h3>
-                    <p class="card-details">Awards Winnings</p>
-                </div>
-                <div class="card">
-                    <img src="assets/icons/projects.png" alt="">
-                    <h3 class="card-stat">1458</h3>
-                    <p class="card-details">Project Finishe</p>
-                </div>
-                <div class="card">
-                    <img src="assets/icons/customers.png" alt="">
-                    <h3 class="card-stat">590</h3>
-                    <p class="card-details">Clients Worked</p>
-                </div>
-                <div class="card">
-                    <img src="assets/icons/email.png" alt="">
-                    <h3 class="card-stat">22578</h3>
-                    <p class="card-details">Email Send</p>
+                <div class="grid grid-cols-3 lg:grid-cols-5 gap-4">
+                    <div><img src="assets/sponsors/amazon.png" alt=""></div>
+                    <div><img src="assets/sponsors/figma.png" alt=""></div>
+                    <div><img src="assets/sponsors/google.png" alt=""></div>
+                    <div><img src="assets/sponsors/spotify.png" alt=""></div>
+                    <div><img src="assets/sponsors/telerama.png" alt=""></div>
                 </div>
             </div>
         </section>
-        <section class="sponspors">
-            <h3 class="secton-title" id="secton-title">Our Sponspors</h3>
-            <p class="taitle-details" id="secton-title">There are many variations of passages of Lorem Ipsum
-                available,<br>
-                but the majority have suffered alteration.</p>
-            <div class="sponspors-img-container">
-                <img src="assets/sponsors/spotify.png" alt="">
-                <img src="assets/sponsors/amazon.png" alt="">
-                <img src="assets/sponsors/google.png" alt="">
-                <img src="assets/sponsors/telerama.png" alt="">
-                <img src="assets/sponsors/figma.png" alt="">
+        <!-- Contact section start -->
+        <section id="Contact" class="mx-5 md:mx-12 lg:mx-20">
+            <div class="text-center py-12">
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold">Feel <span class="text-[#FF900E]">Free</span></h1>
+                <p class="text-balance text-[#727272] py-8">Connect Us</p>
+            </div>
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-5">
+                <div class="grid grid-cols-1 gap-3 ">
+                    <div class="text-center py-4 px-3 border shadow-md">
+                        <i class="ri-mail-send-line text-xl"></i>
+                        <p>Mail</p>
+                        <p>architect@gmail.com</p>
+                        <p>write now <i class="ri-arrow-right-line"></i></p>
+                    </div>
+                    <div class="text-center py-4 px-3 border shadow-md">
+                        <i class="ri-whatsapp-line text-xl"></i>
+                        <p>What's Up</p>
+                        <p>+8801800 000 601</p>
+                        <p>write now <i class="ri-arrow-right-line"></i></p>
+                    </div>
+                    <div class="text-center py-4 px-3 border shadow-md">
+                        <i class="ri-messenger-line text-xl"></i>
+                        <p>messenger</p>
+                        <p>architect</p>
+                        <p>write now <i class="ri-arrow-right-line"></i></p>
+                    </div>
+                    
+                   
+                </div>
+                <div>
+                    <form action="" class="mt-5">
+                        <div>
+                            <input type="text" placeholder="Type your Name" class="input input-bordered input-warning w-full max-w-xs" /> 
+                        </div>
+                        <div class="my-5">
+                            <input type="text" placeholder="Type your Email" class="input input-bordered input-warning textarea-md w-full max-w-xs " />
+                        </div>
+                        <div>
+                            <textarea class="textarea textarea-warning textarea-bordered textarea-md w-full max-w-xs" placeholder="Bio"></textarea>
+                        </div>
+                        <button class="btn btn-warning mt-8"> Send message <i class="ri-send-plane-fill"></i></button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <!-- Footer section start -->
-        <p class="footer">All rights reserved copyright@2023 startup landing page design</p>
-    </footer>
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded mt-4">
+        
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+          </div>
+        </nav> 
+        <aside>
+          <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        </aside>
+      </footer>
+
 </body>
 
 </html>
